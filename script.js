@@ -1,4 +1,4 @@
-// any input parameter road number with the calculation 3 multiply, 10 addition , 2 divide and 5 subtraction to final result
+/* any input parameter road number with the calculation 3 multiply, 10 addition , 2 divide and 5 subtraction to final result */
    function mindGame(RoadNumber) {
     if (typeof RoadNumber !== 'number') {
         return 'value should be number';
@@ -10,7 +10,7 @@
     return subtractResult;
 }
 
-// get the name input parameter and text character length even or odd
+/* get the name input parameter and text character length even or odd */
 function evenOdd(name) {
     if (typeof name !== 'string') {
         return 'value should be an string';
@@ -21,7 +21,7 @@ function evenOdd(name) {
     }
 }
 
-// checking input parameter number to divide result grater than 7 or less than 7. when divide result grater than 7 return double of the input otherwise return divide
+/* checking input parameter number to divide result grater than 7 or less than 7. when divide result grater than 7 return double of the input otherwise return divide */
 function isLGSeven(passCode) {
     const subtract = passCode - 7;
     if (typeof passCode !== 'number') {
@@ -34,7 +34,7 @@ function isLGSeven(passCode) {
     }
 }
 
-// finding in input array parameter to positive or negative ages.negative ages are count and return
+/* finding in input array parameter to positive or negative ages.negative ages are count and return */
 function findingBadData(ages) {
     let count = 0;
     for (let i = 0; i < ages.length; i++) {
@@ -48,7 +48,7 @@ function findingBadData(ages) {
     return count;
 }
 
-// three friend gems convert to diamond and return total diamond if less than 2000 otherwise return total diamond subtraction to 2000
+/* three friend gems convert to diamond and return total diamond if less than 2000 otherwise return total diamond subtraction to 2000 */
 function gemsToDiamond(friend1Gems, friend2Gems, friend3Gems) {
     const friend1Diamond = friend1Gems * 21;
     const friend2Diamond = friend2Gems * 32;
@@ -62,4 +62,3 @@ function gemsToDiamond(friend1Gems, friend2Gems, friend3Gems) {
         return totalDiamond;
     }
 }
-
