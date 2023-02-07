@@ -1,20 +1,16 @@
-// any input parameter number with calculation 3 multiplication, 10 addition , 2 division and 5 subtraction
-   function mindGame(number) {
-    if (typeof number !== 'number') {
-        return 'value should be numbers';
+// any input parameter road number with the calculation 3 multiply, 10 addition , 2 divide and 5 subtraction to final result
+   function mindGame(RoadNumber) {
+    if (typeof RoadNumber !== 'number') {
+        return 'value should be number';
     }
-    const multiplication = number * 3;
-    const addition = multiplication + 10;
-    const division = addition / 2;
-    const subtraction = division - 5;
-    return subtraction;
+    const multiply = RoadNumber * 3;
+    const addition = multiply + 10;
+    const divide = addition / 2;
+    const subtractResult = divide - 5;
+    return subtractResult;
 }
-// const result = mindGame(-15);
-// console.log(result);
 
-
-
-// finding which parameter text length the number even or odd 
+// get the name input parameter and text character length even or odd
 function evenOdd(name) {
     if (typeof name !== 'string') {
         return 'value should be an string';
@@ -24,29 +20,21 @@ function evenOdd(name) {
         return 'odd';
     }
 }
-// const result = evenOdd('2845245');
-// console.log(result);
 
-
-
-// checking parameter number grater than and equal to 7 or less than 7
-function isLGSeven(anyNumber) {
-    const result = anyNumber - 7;
-    if (typeof anyNumber !== 'number') {
+// checking input parameter number to divide result grater than 7 or less than 7. when divide result grater than 7 return double of the input otherwise return divide
+function isLGSeven(passCode) {
+    const subtract = passCode - 7;
+    if (typeof passCode !== 'number') {
         return 'value should be numbers';
-    } else if ( result >= 7) {
-        const multiplication = anyNumber * 2;
-        return multiplication;
+    } else if ( subtract >= 7) {
+        const multiplyResult = passCode * 2;
+        return multiplyResult;
     } else {
-        return result;
+        return subtract;
     }
 }
-// const rr = isLGSeven(6545);
-// console.log(rr);
 
-
-
-// finding array in parameter positive or negative ages
+// finding in input array parameter to positive or negative ages.negative ages are count and return
 function findingBadData(ages) {
     let count = 0;
     for (let i = 0; i < ages.length; i++) {
@@ -59,13 +47,8 @@ function findingBadData(ages) {
     }
     return count;
 }
-// const ages = [2, -5, 5, -7, 8 -13, 6];
-// const finalResult = findingBadData([4, 44, 44, 45]);
-// console.log(finalResult);
 
-
-
-// three friend gems convert into diamond
+// three friend gems convert to diamond and return total diamond if less than 2000 otherwise return total diamond subtraction to 2000
 function gemsToDiamond(friend1Gems, friend2Gems, friend3Gems) {
     const friend1Diamond = friend1Gems * 21;
     const friend2Diamond = friend2Gems * 32;
@@ -80,5 +63,3 @@ function gemsToDiamond(friend1Gems, friend2Gems, friend3Gems) {
     }
 }
 
-// const totalResult = gemsToDiamond(20, 200, 50);
-// console.log(totalResult);
