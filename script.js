@@ -24,7 +24,7 @@ function evenOdd(name) {
 
 
 
-// checking parameter number grater than and equal 7 or less than 7
+// checking parameter number grater than and equal to 7 or less than 7
 function isLGSeven(anyNumber) {
     const result = anyNumber - 7;
     if ( result >= 7) {
@@ -39,19 +39,16 @@ function isLGSeven(anyNumber) {
 
 
 
-// finding array in parameter positive or negative numbers
+// finding array in parameter positive or negative ages
 function findingBadData(ages) {
+    let count = 0;
     for (let i = 0; i < ages.length; i++) {
         const age = ages[i]
-        if (age  < 0) {
-            console.log(age)
-        }
-        else {
-            console.log(age)
-        }
+        if (age  < 0) count ++;
     }
+    return count
 }
 
-const ages = [1, 2, 5, 0, -5];
+const ages = [ 2, -5, 5, -7, 8 -13, 6];
 const finalResult = findingBadData(ages);
-// console.log(finalResult);
+console.log(finalResult);
