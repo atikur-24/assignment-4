@@ -37,16 +37,20 @@ function isLGSeven(passCode) {
 /* finding in input array parameter to positive or negative ages.negative ages are count and return */
 function findingBadData(ages) {
     let count = 0;
+    if (!Array.isArray(ages) || typeof ages !== 'string') {
+        return 'value should be an array';
+    }
     for (let i = 0; i < ages.length; i++) {
         const age = ages[i]
-        if (!Array.isArray(ages)) {
-            return 'value should be an array';
-        } else if (age  < 0) {
+    if (age  < 0) {
             count ++;
         }
     }
     return count;
 }
+const ages = [20, -18, 14, -25, -14]
+const result = findingBadData(ages);
+console.log(result);
 
 /* three friend gems convert to diamond and return total diamond if less than 2000 otherwise return total diamond subtraction to 2000 */
 function gemsToDiamond(friend1Gems, friend2Gems, friend3Gems) {
